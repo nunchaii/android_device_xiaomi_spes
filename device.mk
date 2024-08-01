@@ -282,7 +282,8 @@ PRODUCT_PACKAGES += \
     libstagefright_omx.vendor
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc) \
+    $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
     $(call soong_config_set_bool,stagefright,target_use_legacy_mediacodecbuffer_setrange,true)
     $(call soong_config_set_bool,stagefright,target_restore_surface_generation_after_reconnect,true)
 
