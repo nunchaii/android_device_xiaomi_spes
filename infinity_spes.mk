@@ -35,7 +35,7 @@ INFINITY_MAINTAINER := Sehraan
 TARGET_HAS_UDFPS := false
 
 # Whether Including Google Apps
-WITH_GAPPS := true
+WITH_GAPPS := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
