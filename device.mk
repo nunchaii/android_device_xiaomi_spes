@@ -485,3 +485,6 @@ include packages/apps/XiaomiParts/device.mk
 
 # Temporary: disable FCM kernel requirement enforcement.
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
+# Dolby Atmos Makefile
+   $(call inherit-product, hardware/dolby/dolby.mk)
